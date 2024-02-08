@@ -1,7 +1,70 @@
 .item {
-    margin: 5px 0px;
+    margin: 0;
+background-color: rgb(218, 217, 217);
+height: 30px;
 }
 
-.item button {
+
+
+.delbtn {
     margin-left: 5px;
+    border: none;
+    background-color: rgb(218, 217, 217);
+}
+
+
+
+.item2{
+    background-color: gray;
+text-decoration: line-through;
+color: white;
+width: 100%;
+}
+
+.delbtn2 {
+    background-color: gray;
+    color: white;
+}
+
+.divok {
+    background-color: red;
+    margin: 0;
+    height: 100px;
+    width: 740px
+}
+.kok {
+    color: white;
+    padding: 10px;
+}
+
+.inp {
+    width: 250px;
+    border: 0;
+}
+.btn {
+    width: 125px;
+color: gray;
+border: 0;
+}
+.sps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ background-color: rgb(218, 217, 217);
+ width: 740px;
+}
+
+
+
+.divochek{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    
+}
+
+.wrapper{
+    align-items: center;
+    text-align: center;
+   
 }

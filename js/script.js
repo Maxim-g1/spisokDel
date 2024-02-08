@@ -21,7 +21,8 @@ myButton.addEventListener('click', () => {
 
     newItem.textContent = nameInp.value
     let delBtn = document.createElement('button');
-    delBtn.textContent = 'Удалить'
+    delBtn.classList.add('delbtn')
+    delBtn.textContent = 'х'
     newItem.appendChild(delBtn)
     // Очистить поле ввода
     nameInp.value = ''
@@ -29,6 +30,11 @@ myButton.addEventListener('click', () => {
 
     delBtn.addEventListener('click', () => {
         list.removeChild(newItem)
+
+    })
+    newItem.addEventListener('click', ()=>{
+        newItem.classList.toggle('item2')
+        delBtn.classList.toggle('delbtn2')
 
     })
 })
