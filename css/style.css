@@ -24,13 +24,15 @@ width: 100%;
 .delbtn2 {
     background-color: gray;
     color: white;
+    
 }
 
 .divok {
     background-color: red;
     margin: 0;
     height: 100px;
-    width: 740px
+    width: 740px;
+   
 }
 .kok {
     color: white;
@@ -40,6 +42,7 @@ width: 100%;
 .inp {
     width: 250px;
     border: 0;
+    
 }
 .btn {
     width: 125px;
@@ -66,5 +69,5 @@ border: 0;
 .wrapper{
     align-items: center;
     text-align: center;
-   
+  
 }

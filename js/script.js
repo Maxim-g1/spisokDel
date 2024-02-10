@@ -35,6 +35,6 @@ myButton.addEventListener('click', () => {
     newItem.addEventListener('click', ()=>{
         newItem.classList.toggle('item2')
         delBtn.classList.toggle('delbtn2')
-
+        delBtn.textContent='☺'
     })
 })
