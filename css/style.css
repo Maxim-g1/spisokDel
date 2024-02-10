@@ -2,19 +2,27 @@
     margin: 0;
 background-color: rgb(218, 217, 217);
 height: 30px;
+display: flex;
+padding-left: 5px;
+padding-top: 5px;
 }
 
+
+.item:nth-child(odd){
+    background-color: rgb(160, 158, 158);
+}
 
 
 .delbtn {
     margin-left: 5px;
     border: none;
     background-color: rgb(218, 217, 217);
+  
 }
 
 
 
-.item2{
+.item .item2{
     background-color: gray;
 text-decoration: line-through;
 color: white;
@@ -27,11 +35,16 @@ width: 100%;
     
 }
 
+
+
+
+
 .divok {
     background-color: red;
     margin: 0;
     height: 100px;
     width: 740px;
+    margin: 0 auto;
    
 }
 .kok {
@@ -55,7 +68,9 @@ border: 0;
     list-style: none;
  background-color: rgb(218, 217, 217);
  width: 740px;
+ margin: 0 auto;
 }
+
 
 
 
@@ -71,3 +86,17 @@ border: 0;
     text-align: center;
   
 }
+
+.block_poisk {
+    display: flex;
+}
+
+.inppoisk{
+    flex-grow: 1;
+    border-radius: inherit;
+    padding: 5px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+}
+

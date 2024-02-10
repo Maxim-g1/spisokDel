@@ -2,6 +2,8 @@
 const myButton = document.querySelector('#myButton')
 const nameInp = document.querySelector('#nameInp')
 const list = document.querySelector('#list')
+const poiskbtn =document.querySelector('#poiskbtn')
+const inppoisk =document.querySelector('#inppoisk')
 
 
 myButton.addEventListener('click', () => {
@@ -32,9 +34,47 @@ myButton.addEventListener('click', () => {
         list.removeChild(newItem)
 
     })
+
     newItem.addEventListener('click', ()=>{
         newItem.classList.toggle('item2')
         delBtn.classList.toggle('delbtn2')
-        delBtn.textContent='☺'
+        
     })
+   
 })
+
+
+//indexOf() - поиск подсторки в строке
+
+
+
+//toLowerCase все символы маленькие
+
+// if(result!=-1){
+//     console.log(`Строка ${str} содержит подстроку "${chunk}"`)
+// }else{
+//     console.log(`Строка ${str} несодержит подстроку "${chunk}"`)
+// }
+
+function isMatching(full, chunk){
+    let index = full.toLowerCase().indexOf(chunk.toLowerCase());
+    let result=index!=-1 ;
+    return result;
+}
+
+function poisk(input){
+    const items=document.querySelectorAll('.item')
+    let value=input.value
+    for(let item of items){
+        if(isMatching(item.textContent, value)== false){
+            item.style.display="none"
+        }else{
+            item.style.display="flex"
+        }
+    }
+}
+
+inppoisk.addEventListener('keyup',()=>{
+    poisk(inppoisk)
+})
+
